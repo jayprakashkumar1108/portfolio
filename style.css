@@ -1,12 +1,9 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500&display=swap');
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    scroll-behavior: smooth;
-    text-decoration: none;
 }
 :root{
     --text-color:#f5f5f5;
@@ -26,70 +23,28 @@
     0 0 100px rgba(18, 247, 255 0.3),
     0 0 150px rgba(18, 247, 255 0.3),   
 }
-body{
-    font-family: "poppins",sans-serif;
-    background-color: var(--bg-color);
-    color:var(--text-color);
-}
-#menu{
-    width:100%;
-    height:100%;
+.nav-item {
+    font-size: 1.5rem;
 }
 
-header{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px 10%;
+.navbar-nav {
+    padding-top: 7px;
 }
-#logo{
-    height: 100%;
-    width: 100%;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 1px;
+.navbar{
+   background-color: var(--bg-color);
 }
 
-span{
-    color: var(--hover-color);
+.nav-link:hover{
+    color: rgb(88, 88, 255)!important;
 }
-.navlist{
-    display: flex;
+.navbar{
+    height: 6rem;
 }
-
-.navlist a{
-    color: var(--text-color);
-    font-weight:500;
-    padding:10px 20px;
+.navbar-nav{
+    margin-left: auto;
+    justify-content: end;
 }
 
-
-#menu-icon{
-    font-size:1.8rem;
-    z-index: 10001;
-    cursor: pointer;
-    margin-left: 25px;
-    background:var(--hover-color);
-    border-radius:3px;
-    color:var(--secon-bg-color);
-    /* display: none; */
-}
-body{
-    font-family:"poppins",sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    width: 100px;
-}
-section{
-    padding:100px 10%;
-}
 #home{
     min-height:100vh;
     height: 100%;
@@ -98,8 +53,9 @@ section{
     grid-template-columns:repeat(1,1fr);
     align-items: center;
     grid-gap:2em;
+    background-color: #250821;
 }
-.p{
+#home .p{
     max-width:47rem;
     font-size: 1.2rem;
     position: static;
@@ -200,7 +156,7 @@ a.btn:nth-child(2)::before{
     background: var(--hover-color);
 } 
 .social-icons{
-    margin-top:2rem;
+    margin-top:4rem;
     display: flex;
     justify-content: space-between;
     width: 310px;
@@ -239,18 +195,6 @@ a.btn:nth-child(2)::before{
     width: 100%;
     background: var(--hover-color);
 }
-.home-image{
-    position: relative;
-    margin-left: 70%;
-    margin-block-start:-110%;
-     height: 100%;
-     width: 0;
- }
- 
- .img-box{
-    text-align: center;
- }
-
 .change-text h3 .word{
     position: absolute;
     display: flex;
@@ -267,8 +211,12 @@ a.btn:nth-child(2)::before{
 .change-text h3 .word .letter.behind{
     transform:rotateX(-90deg);
 }
-
-/* about section------*/
+#home .col-8{
+   padding-left: 8rem;
+}
+.color{
+    color: var(--hover-color);
+}
 .about{
     display: flex;
     justify-content: center;
@@ -331,24 +279,33 @@ a.btn:nth-child(2)::before{
 .info-about1{
     left:10%;
     top: 34%;
+    color: white;
+    font-size: 0.7rem;
 }
 .info-about2{
     left:66%;
     top: 80%;
+    color: white;
+    font-size: 0.7rem;
 }
 .info-about3{
     left:70%;
     top: 32%;
+    color: white;
+    font-size: 0.7rem;
 }
 
 .img-about span{
     color: var(--hover-color);
     font-size:1rem;
     font-weight: 600;
+    font-size: 0.7rem;
 }
-
-/*service section*/
-
+.about .col-8{
+    width: 53rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
 .main-text{
     width: 100%;
     text-align: center;
@@ -369,6 +326,10 @@ a.btn:nth-child(2)::before{
     text-transform: uppercase;
 }
 
+.services{
+background-color: var(--bg-color);
+padding-bottom: 5rem;
+}
 .section-services{
     display:flex;
     justify-content: center;
@@ -421,12 +382,42 @@ a.btn:nth-child(2)::before{
     margin-top: 10px;
     font-size: 1.5rem;
 }
+.services h2{
+    color: var(--hover-color);
+}
+.services .row{
+    width: 83rem;
+    margin: auto;
+}
+.services h3{
+    color: var(--hover-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.services p{
+    color: white;
+}
+.service-icon:hover{
+    color: #250821;
+    background: linear-gradient(to left, rgb(113, 210, 255) 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
 
 .Skills{
-    background: #1c3249;
-    
+    background-color: var(--secon-big-color);
+    padding-bottom: 5rem;
 }
- .Skills .my-skill{
+.Skills .col-7{
+    width: 49rem;
+    /* padding-left: 5rem; */
+    margin-left: 4rem;
+}
+.Skills h3{
+    color: var(--hover-color);
+}
+ 
+.Skills .my-skill{
     align-items: center;
     align-content: center;
     font-size: 2rem;
@@ -464,57 +455,59 @@ a.btn:nth-child(2)::before{
     margin-top: 10px;
 }
 
+.Skills .col-7{
+    margin: auto;
+}
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
 
-.Contact h2{
-    margin-bottom: 3rem;
-}
-.Contact .heading{
-    margin-left: 39.5%;
-    font-size: 2.5rem;
-}
-.Contact form{
-    max-width: 70rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
 }
 
-.Contact form .input-box{
-    align-items: center;
-    align-content: center;
-    width:60%;
-    padding: 1.5rem;
-    font-size: .8rem;
-    color: var(--text-color);
-    background: var(--secon-big-color);
-    border-radius: 2rem;
-    margin: .7rem 15rem;
- }
- 
-.Contact form textarea{
-   width: 100%;
-   padding: 1.5rem;
-   font-size: 1.6rem;
-   color: var(--text-color);
-   background: var(--secon-big-color);
-   border-radius: .8rem;
-   margin: .7rem 0;
+.skillss {
+  text-align: right; /* Right-align text */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
 }
-.fill-space{
-    font-size: 1.5rem;
+
+.C {width: 90%; height: 1.5rem; background-color: var(--hover-color);} /* Green */
+.cc {width: 80%; height: 1.5rem; background-color: var(--hover-color)} /* Blue */
+.java {width: 65%; height: 1.5rem; background-color: var(--hover-color)} /* Red */
+.html {width: 90%; height: 1.5rem; background-color: var(--hover-color)} /* Green */
+.css {width: 80%; height: 1.5rem; background-color: var(--hover-color)} /* Blue */
+.js {width: 65%; height: 1.5rem; background-color: var(--hover-color)} /* Red */
+
+.Contact{
+    background-color: var(--bg-color);
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+}
+.Contact .container{
+    background-color: var(--bg-color);
+}
+.Contact .btn-box{
+   margin-left: 43%;
+   margin-top: 3rem;
 }
 
 
 .footer{
-    background: var(--secon-big-color);
+    background-color: var(--secon-big-color);
     color: #f5f5f5;
     border-top: 2px solid var(--bg-color);
+    padding: 4rem;
+    margin-top: 5rem;
 }
 .footer-container{
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    background-color: var(--secon-big-color);
 }
+
 .footer-box h3{
     font-size: 1.1rem;
     font-weight: 400;
@@ -535,29 +528,8 @@ a.btn:nth-child(2)::before{
    color: #f5f5f5;
 }
 .copyright{
-    color: #000;
+    background-color: var(--secon-big-color);
     text-align: center;
     padding: 20px;
     
-}
-
-
-
-
-
-
-@keyframes morph{
-    0%,
-    100%{
-        border-radius: 40% 60% 70% / 40% 40% 60% 50%;
-    }
-    30%{
-        border-radius: 70% 30% 50% 50% / 30% 40% 70% 50%;
-    }
-    60%{
-        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-    }
-    80%{
-        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
-    }
 }

@@ -1,243 +1,323 @@
-<!DOCTYPE html>
-<html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,intial-scale=1.0">
-        <title>RAO SAHAB || portfolio website</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        <header id="menu">
-            <div id="logo"><span>J.P </span>Yadav</div>
+<!doctype html>
+<html lang="en">
 
-            <ul class="navlist">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>  
-            </ul>
-            <div id="menu-icon" class="bx bx-menu"></div> 
-        </header>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
 
-        <!--       home       -->
-        <section id="home" class="home">
-        <h1>Hi! I'm jay prakash kumar</h1>
-        <div class="change-text">
-            <h3>And I'm</h3>
-            <h3>
-                <span class="word">Student</span>
-                <span class="word">web&nbsp;Designer</span>
-                <span class="word">Frontend&nbsp;developer</span>
-                <span class="word">java&nbsp;developer</span>
-                <span class="word">UX/UI&nbsp;developer</span>
-                <span class="word">MOtivator</span>
-            </h3>
+<body>
+    <header id="menu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand p-4 fs-1 text-white" href="#"><span class="color">J.P</span> YADAV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#about">about</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#service">services</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#skill">skill</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="text-white">Hi! I'm jay prakash kumar</h1>
+                <div class="change-text py-4">
+                    <h3 class="text-white">And I'm</h3>
+                    <h3>
+                        <span class="word">Student</span>
+                        <span class="word">web&nbsp;Designer</span>
+                        <span class="word">Frontend&nbsp;developer</span>
+                        <span class="word">java&nbsp;developer</span>
+                        <span class="word">UX/UI&nbsp;developer</span>
+                        <span class="word">MOtivator</span>
+                    </h3>
+                </div>
+                <p class="p text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.Itaque in dolores
+                    quisquam amet magnam nisi at a, minus ipsum ducimus adipisci labore et soluta, voluptatem
+                    perferendis sunt odio beatae ipsa. a fresher looking for a platform to give my best who want to fill
+                    a best working experience </p>
+                <div class="info-box">
+                    <div class="email-info">
+                        <h5>Email :</h5>
+                        <span>jai.prakshnryn@gmail.com</span>
+                    </div>
+                    <div class="Linkedin-info py-3">
+                        <h5>Linkedin :</h5>
+                        <span>Jay prakash kumar</span>
+                    </div>
+                </div>
+
+                <div class="btn-box my-3">
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#" class="btn">Hire me now!</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-telegram'></i></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <img src="image1.jpg" alt="">
+            </div>
         </div>
-        <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.Itaque in dolores quisquam amet magnam nisi at a, minus ipsum ducimus adipisci labore et soluta, voluptatem perferendis sunt odio beatae ipsa. a fresher looking for a platform to give my best who want to fill a best working experience </p>
-    <div class="info-box">
-        <div class="email-info">
-            <h5>Email :</h5>
-            <span>jai.prakshnryn@gmail.com</span>
-        </div>
-        <div class="Linkedin-info">
-            <h5>Linkedin :</h5>
-            <span>Jay prakash kumar</span>
-        </div>
-    </div>
-    
-    <div class="btn-box">
-        <a href="#" class="btn">Download CV</a>
-        <a href="#" class="btn">Hire me now!</a>
-    </div>
-    <div class="social-icons">
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="#"><i class='bx bxl-instagram' ></i></a>
-        <a href="#"><i class='bx bxl-twitter' ></i></a>
-        <a href="#"><i class='bx bxl-linkedin' ></i></a>
-        <a href="#"><i class='bx bxl-telegram'></i></a>
-    </div>
-    <div class="home-image">
-        <div class="img-box">
-            <img src="image1.jpg" alt="">
-        </div>
-       
-    </div>
     </section>
+
+
     <section id="about" class="about">
-        <div class="img-about">
-            <img src="image2.jpg" alt="">
-            <div class="info-about1">
-                <p>I'm a</p>
-                <span>fresher.</span>
+        <div class="row py-5 my-5">
+            <div class="col-4">
+                <div class="img-about">
+                    <img src="image2.jpg" alt="">
+                    <div class="info-about1">
+                        <p>I'm a</p>
+                        <span>fresher.</span>
+                    </div>
+                    <div class="info-about2">
+                        <span>10+</span>
+                        <p>project complete</p>
+                    </div>
+                    <div class="info-about3">
+                        <p>I don't have working</p>
+                        <span>experience.</span>
+                    </div>
+
+                </div>
             </div>
-            <div class="info-about2">
-                <span>10+</span>
-                <p>project complete</p>
+            <div class="col-8">
+                <div class="about-content">
+                    <span>let me introduce myself</span>
+                    <h2 class="py-2">About me</h2>
+                    <h3 class="text-white py-3">A story of good</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nulla, iste veritatis facere
+                        voluptatum voluptas veniam aliquam reprehenderit magnam sapiente debitis repudiandae modi rem
+                        incidunt sit reiciendis dolorum necessitatibus eveniet beatae ducimus dolores consectetur
+                        similique! Eveniet, deserunt voluptate. Similique ullam, dolore magni quo praesentium, fugiat
+                        asperiores quos et quia quas doloribus aperiam. Impedit aliquam modi illo dolores fugit
+                        voluptatem incidunt magnam nisi itaque provident totam eveniet autem pariatur qui mollitia,
+                        repellat vero quod sit nostrum corrupti odio labore! Optio officia officiis laboriosam alias
+                        mollitia at vitae quas, error nobis, iure repudiandae accusantium dicta numquam commodi quos
+                        doloremque aperiam tempore esse sit similique non ipsam. Eligendi tempore eaque cupiditate!</p>
+                    <div class="btn-box">
+                        <a href="#" class="btn">Read more!</a>
+                    </div>
+                </div>
             </div>
-            <div class="info-about3">
-                <p>I don't have working</p>
-                <span>experience.</span>
-            </div>
-            
-        </div>
-        <div class="about-content">
-            <span>let me introduce myself</span>
-            <h2>About me</h2>
-            <h3>A story of good</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nulla, iste veritatis facere voluptatum voluptas veniam aliquam reprehenderit magnam sapiente debitis repudiandae modi rem incidunt sit reiciendis dolorum necessitatibus eveniet beatae ducimus dolores consectetur similique! Eveniet, deserunt voluptate. Similique ullam, dolore magni quo praesentium, fugiat asperiores quos et quia quas doloribus aperiam. Impedit aliquam modi illo dolores fugit voluptatem incidunt magnam nisi itaque provident totam eveniet autem pariatur qui mollitia, repellat vero quod sit nostrum corrupti odio labore! Optio officia officiis laboriosam alias mollitia at vitae quas, error nobis, iure repudiandae accusantium dicta numquam commodi quos doloremque aperiam tempore esse sit similique non ipsam. Eligendi tempore eaque cupiditate!</p>
-        <div class="btn-box">
-            <a href="#" class="btn">Read more!</a>
-        </div>
         </div>
     </section>
-    
+
+
     <section id="services" class="services">
-        <div class="main-text">
-            <span>what i will do for you</span>
+        <div class="text-center py-4">
+            <span class="text-white">what i will do for you</span>
             <h2>Service</h2>
         </div>
-        <div class="section-services">
-            <div class="service-box">
-                <i class='bx bxs-layer service-icon'></i>
-                <h3>Web developer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat eius blanditiis obcaecati ipsa quibusdam dignissimos, corrupti atque ex velit in doloribus dolorum cumque quasi beatae excepturi neque ipsum ipsam doloremque distinctio? Sequi vero, veritatis cumque illum distinctio nobis odio aut sed fuga assumenda reprehenderit iure facilis at animi alias. Vitae rerum magnam in dignissimos odio. Assumenda quibusdam dolor necessitatibus? Fuga, ratione! Nesciunt, molestiae! Vitae eaque unde molestias sapiente ratione quis non, itaque nihil nulla. Illum in ex, nemo voluptas, fugiat sapiente ipsum ad dignissimos enim, rerum assumenda minima animi tenetur nihil aliquam vitae quas.</p>
-                <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
+        <div class="row">
+            <div class="col-4">
+                <div class="service-box">
+                    <i class='bx bxs-layer service-icon'></i>
+                    <h3>Web developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat eius blanditiis
+                        obcaecati ipsa quibusdam dignissimos, corrupti atque ex velit in doloribus dolorum cumque quasi
+                        beatae excepturi neque ipsum ipsam doloremque distinctio? Sequi vero, veritatis cumque illum
+                        distinctio nobis odio aut sed fuga assumenda reprehenderit iure facilis at animi alias. Vitae
+                        rerum magnam in dignissimos odio. Assumenda quibusdam dolor necessitatibus? Fuga, ratione!
+                        Nesciunt, molestiae! Vitae eaque unde molestias sapiente ratione quis non, itaque nihil nulla.
+                        Illum in ex, nemo voluptas, fugiat sapiente ipsum ad dignissimos enim, rerum assumenda minima
+                        animi tenetur nihil aliquam vitae quas.</p>
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
                 </div>
             </div>
-            <div class="service-box">
-                <i class='bx bx-code-alt service-icon'></i>
-                <h3>Linux User</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat eius blanditiis obcaecati ipsa quibusdam dignissimos, corrupti atque ex velit in doloribus dolorum cumque quasi beatae excepturi neque ipsum ipsam doloremque distinctio? Sequi vero, veritatis cumque illum distinctio nobis odio aut sed fuga assumenda reprehenderit iure facilis at animi alias. Vitae rerum magnam in dignissimos odio. Assumenda quibusdam dolor necessitatibus? Fuga, ratione! Nesciunt, molestiae! Vitae eaque unde molestias sapiente ratione quis non, itaque nihil nulla. Illum in ex, nemo voluptas, fugiat sapiente ipsum ad dignissimos enim, rerum assumenda minima animi tenetur nihil aliquam vitae quas.</p>
-                <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
+            <div class="col-4">
+                <div class="service-box">
+                    <i class='bx bx-code-alt service-icon'></i>
+                    <h3>Linux User</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat eius blanditiis
+                        obcaecati ipsa quibusdam dignissimos, corrupti atque ex velit in doloribus dolorum cumque quasi
+                        beatae excepturi neque ipsum ipsam doloremque distinctio? Sequi vero, veritatis cumque illum
+                        distinctio nobis odio aut sed fuga assumenda reprehenderit iure facilis at animi alias. Vitae
+                        rerum magnam in dignissimos odio. Assumenda quibusdam dolor necessitatibus? Fuga, ratione!
+                        Nesciunt, molestiae! Vitae eaque unde molestias sapiente ratione quis non, itaque nihil nulla.
+                        Illum in ex, nemo voluptas, fugiat sapiente ipsum ad dignissimos enim, rerum assumenda minima
+                        animi tenetur nihil aliquam vitae quas.</p>
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
                 </div>
             </div>
-            <div class="service-box">
-                <i class='bx bx-desktop service-icon'></i>
-                <h3>java developer</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat eius blanditiis obcaecati ipsa quibusdam dignissimos, corrupti atque ex velit in doloribus dolorum cumque quasi beatae excepturi neque ipsum ipsam doloremque distinctio? Sequi vero, veritatis cumque illum distinctio nobis odio aut sed fuga assumenda reprehenderit iure facilis at animi alias. Vitae rerum magnam in dignissimos odio. Assumenda quibusdam dolor necessitatibus? Fuga, ratione! Nesciunt, molestiae! Vitae eaque unde molestias sapiente ratione quis non, itaque nihil nulla. Illum in ex, nemo voluptas, fugiat sapiente ipsum ad dignissimos enim, rerum assumenda minima animi tenetur nihil aliquam vitae quas.</p>
-                <div class="btn-box service-btn">
-                    <a href="#" class="btn">Read More</a>
+            <div class="col-4">
+                <div class="service-box">
+                    <i class='bx bx-desktop service-icon'></i>
+                    <h3>java developer</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fugiat eius blanditiis
+                        obcaecati ipsa quibusdam dignissimos, corrupti atque ex velit in doloribus dolorum cumque quasi
+                        beatae excepturi neque ipsum ipsam doloremque distinctio? Sequi vero, veritatis cumque illum
+                        distinctio nobis odio aut sed fuga assumenda reprehenderit iure facilis at animi alias. Vitae
+                        rerum magnam in dignissimos odio. Assumenda quibusdam dolor necessitatibus? Fuga, ratione!
+                        Nesciunt, molestiae! Vitae eaque unde molestias sapiente ratione quis non, itaque nihil nulla.
+                        Illum in ex, nemo voluptas, fugiat sapiente ipsum ad dignissimos enim, rerum assumenda minima
+                        animi tenetur nihil aliquam vitae quas.</p>
+                    <div class="btn-box service-btn">
+                        <a href="#" class="btn">Read More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-<section id="Skills" class="Skills">
-    <div class="my-skill">
-        <h2>Skills</h2>
+
+
+    <section id="Skills" class="Skills">
+        <div class="text-center py-5">
+            <h3>My Skills</h3>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <p class="text-white">C Language</p>
+                <div class="container my-4">
+                    <div class="skillss C"><span>92%</span></div>
+                </div>
+
+                <p class="text-white">C++ Language</p>
+                <div class="container my-4">
+                    <div class="skillss cc"><span>72%</span></div>
+                </div>
+                
+                <p class="text-white">Java</p>
+                <div class="container my-4">
+                    <div class="skillss java"><span>74%</span></div>
+                </div>
+
+                <p class="text-white">HTML</p>
+                <div class="container my-4">
+                    <div class="skillss html"><span>70%</span></div>
+                </div>
+
+                <p class="text-white">CSS</p>
+                <div class="container my-4">
+                    <div class="skillss css"><span>64%</span></div>
+                </div>
+
+                <p class="text-white">JavaScript</p>
+                <div class="container my-4">
+                    <div class="skillss js"><span>55%</span></div>
+                </div>
+            </div>
+    </section>
+    
+    <section class="Contact" id="Contact">
+        <div class="text-center">
+            <h2 class="text-primary">CONTACT US</h2>
+        </div>
+        <div class="container my-5 py-5">
+            <div class="row">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Address">
+                      </div>
+                </div>
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label text-white">Message Area</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="btn-box">
+                <a href="#" class="btn">Submit</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer shadow">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a class="navbar-brand p-4 fs-1 text-white" href="#"><span class="color">J.P</span> YADAV</a>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-telegram'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#">Home<br></a>
+                <a href="#">Cars<br></a>
+                <a href="#">about<br></a>
+                <a href="#">Parts</a>
+            </div>
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <p>Privacy</p>
+                <p>Refund Policy</p>
+                <p>Cookie Policy</p>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>United States</p>
+                <p>Japan</p>
+                <p>Korea</p>
+                <p>Germany</p>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <div class="copyright">
+        <p class="text-white"><span class="text-primary">&#169;</span>carpoolvenoms <span class="text-primary"> All Right Reserved</span></p>
     </div>
-    <div class="skill-main">
-        <div class="skill-left">
-            <div class="skill-bar">
-                <div class="info">
-                    <p>C language</p>
-                    <p>92%</p>
-                </div>
-                <div class="bar">
-                    <span class="c"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>C++ language</p>
-                    <p>72%</p>
-                </div>
-                <div class="bar">
-                    <span class="cpp"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>Java</p>
-                    <p>74%</p>
-                </div>
-                <div class="bar">
-                    <span class="java"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>HTML</p>
-                    <p>72%</p>
-                </div>
-                <div class="bar">
-                    <span class="html"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>css</p>
-                    <p>64%</p>
-                </div>
-                <div class="bar">
-                    <span class="css"></span>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <div class="info">
-                    <p>Java script</p>
-                    <p>52%</p>
-                </div>
-                <div class="bar">
-                    <span class="javascript"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="Contact" id="Contact">
-    <h2 class="heading">Contact <span>Me!</span></h2>
-    <form action="#">
-        <div class="input-box">
-            <input class="fill-space" type="text" placeholder="full Name">
-            <input class="fill-space" type="email" placeholder="Email Address">
-        </div>
-        <div class="input-box">
-            <input class="fill-space" type="Number" placeholder="Mobile Number">
-            <input  class="fill-space" type="text" placeholder="Email subject">
-        </div>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <div class="btn-box service-btn">
-            <a href="#" class="btn">Send Message</a>
-        </div>
-    </form>
-</section>
-<section class="footer">
-    <div class="footer-container container">
-        <div class="footer-box">
-            <h3>page</h3>
-            <a href="#">Home<br></a>
-            <a href="#">about<br></a>
-            <a href="#">Service<br></a>
-            <a href="#">Skills<br></a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="footer-box">
-            <h3>Legal</h3>
-            <p>Privacy</p>
-            <p>Refund Policy</p>
-            <p>Cookie Policy</p>
-        </div>
-        <div class="footer-box">
-            <h3>Contact</h3>
-            <p>United States</p>
-            <p>Japan</p>
-            <p>Korea</p>
-            <p>Germany</p>
-        </div>
-    </div>
-</section>
-<div class="copyright">
-    <p>&#169; carpoolvenom All Right Reserved</p>
-</div>
-<script src="script.js"></script>
-    </body>
-    <script src="script.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
